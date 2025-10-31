@@ -7,7 +7,7 @@
 
     <style>
         body {
-            background-color: #fff7d1; /* Fondo tipo papel */
+            background-color: #fff7d1;
         }
 
         .book-card {
