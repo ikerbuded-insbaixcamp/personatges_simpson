@@ -6,10 +6,10 @@ use App\Livewire\Settings\Profile;
 use App\Livewire\Settings\TwoFactor;
 use Illuminate\Support\Facades\Route;
 use Laravel\Fortify\Features;
+use App\Http\Controllers\PersonatgeController;
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('home');
+Route::get('/', [PersonatgeController::class, 'index']);
+Route::get('/personatge/{id}', [PersonatgeController::class, 'show'])->name('personatge.show');
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
