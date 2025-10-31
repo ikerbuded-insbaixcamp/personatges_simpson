@@ -24,7 +24,6 @@
 
             <h2 class="card-title fw-bold mb-3">{{ $personatge->nombre }}</h2>
 
-            {{-- Badges opcionales --}}
             <div class="mb-3">
                 @if(isset($personatge->ocupacion))
                     <span class="badge bg-info text-dark me-1 badge-wrap">{{ $personatge->ocupacion }}</span>
@@ -35,7 +34,6 @@
                 @endif
             </div>
 
-            {{-- Frase opcional --}}
             @if(isset($frase) && !empty($frase))
                 <p class="fst-italic fs-5 text-dark">"{{ $frase }}"</p>
             @endif
